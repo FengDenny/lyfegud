@@ -1,0 +1,284 @@
+/* global */
+
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+/* Hero video cover*/
+#hero{
+    height:100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.video-cover video{
+    min-width:100%;
+    min-height: 100%;
+    object-fit:cover;
+    position: absolute;
+    /* align items in the middle of the screen */
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+/* pseudo selector to use overlay*/
+
+.video-cover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* remove scrollbars */
+    overflow: hidden;
+    z-index:-1;
+
+}
+
+.video-cover:after{
+    content:'';
+    /*  absolute position from parent of .hero because of its position relative */
+    position:absolute;
+    /* put the overlay in the corner position and spread across the video */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5)
+}
+
+
+/* Hero-section */
+
+#hero .hero-section h1{
+    position:absolute;
+    color:#fff;
+    font-size:2.5rem;
+    padding:10px;
+    top:45%;
+    left:31.8%; 
+
+}
+
+ #hero .hero-section button{
+    display:inline-block;
+    padding:10px 30px;
+    color:#fff;
+    font-weight: bold;
+    box-shadow:var(--box-shadow);
+    border: var(--border);
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius:10px;
+    font-size: 1rem;
+    width:12rem;
+  
+ 
+ } 
+
+
+ /* clicking effect */
+
+ #hero .hero-section button:hover{
+
+    transform:scale(0.98);
+ }
+
+.btn-primary button {
+
+    position: absolute;
+    background:var(--button-color);
+    top:55%;
+    left:32.8%;
+    
+ }
+
+.btn-secondary button {
+
+    position: absolute;
+    background: transparent;
+    top:55%;
+    left:55%;     
+ }
+
+ .btn-secondary button:hover {
+    background: rgb(6, 53, 68);
+
+
+}
+
+.btn-primary button:hover{
+    background: rgb(6, 53, 68);
+    color:rgb(180, 187, 201);
+}
+
+/* FOOTER */
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    box-shadow:var(--box-shadow);
+    width:100%;
+    height:100px;
+    color:#fff;
+    background: var(--button-color);
+    opacity: 0.5;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+
+}
+    
+footer h1{
+     position: absolute;
+    bottom: 45%;  
+    left:50%;
+    font-size:2.5rem;
+    
+}
+
+footer p{
+    display:flex;
+    margin-left:43%;
+    margin-top:4%;
+}
+
+
+/* Media Queries */
+/* Extra large devices (large laptops and desktops, 993-1440px) */
+
+
+@media only screen and (max-width: 1200px )
+{
+    footer h1{
+        
+       bottom: 50%;  
+       left:55%;
+       
+   }
+    footer p{
+        margin-left:45%;
+        margin-top:5%;
+    }
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width:1440px)
+{
+
+ .btn-secondary button {
+
+    left:60%;     
+ }
+
+}
+
+/* Large devices (laptops/desktops, 770-1000px ) */
+@media only screen and (min-width:769px) and (max-width: 1003px) {
+
+
+ #hero .hero-section h1{
+     font-size:1.5rem;
+     letter-spacing:0.1rem;
+ }
+ .btn-secondary button {
+
+    left:59%;     
+ }
+
+ footer h1{
+        
+  
+    left:60%;
+    
+}
+ footer p{
+     margin-left:47%;
+     margin-top:7%;
+ }
+
+
+}
+/* Medium devices (landscape tablets, 798px and down) */
+@media only screen and (max-width: 798px) {
+
+    #hero .hero-section h1{
+        font-size:1.3rem;
+        letter-spacing:0.1rem;
+    }
+
+ .btn-secondary button {
+
+    left:63%;     
+ }
+
+ #hero .hero-section button{
+    font-size: 0.8rem;
+  
+ 
+ } 
+ footer h1{
+        
+  
+    left:54%;
+    font-size:1.2rem;
+    
+}
+ footer p{
+     margin-left:35%;
+     font-size:0.8rem;
+     margin-top:10%;
+ }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 660px) {
+
+    #hero .hero-section h1{
+        left:30%;
+        font-size:1rem;
+        letter-spacing:0.1rem;
+    }
+
+    .btn-secondary button {
+
+        top:63%;   
+        left:42%;  
+     }  
+     .btn-primary button { 
+        left:42%;  
+     }
+
+     footer h1{
+        
+  
+        left:55%;
+        font-size:1.2rem;
+        
+    }
+     footer p{
+         margin-left:35%;
+         font-size:0.7rem;
+         margin-top:11%;
+     }
+    
+
+
+
+
+}
