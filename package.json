@@ -2,6 +2,7 @@
   "name": "lyfegud",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fengdenny.github.io/lyfegud/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
