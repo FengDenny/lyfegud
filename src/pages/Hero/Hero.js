@@ -28,8 +28,7 @@ library.add(faHeartbeat);
                 </div>
                 <footer className ="footer">
                      <div className="footer-logo">
-                          <h1><FontAwesomeIcon icon={faHeartbeat}/></h1>
-                          
+                          <h1><FontAwesomeIcon icon={faHeartbeat}/></h1> 
                      </div>
                     <p> Copyright © 2020 - Lyfegud: All Rights Reserved.</p>
                  </footer>  
