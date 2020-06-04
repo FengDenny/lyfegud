@@ -42,6 +42,7 @@
     /* remove scrollbars */
     overflow: hidden;
     z-index:-1;
+    background: url("../images/Color_8.jpg") no repeat center center/cover;
 
 }
 
@@ -250,7 +251,7 @@ footer p{
 @media only screen and (max-width: 660px) {
 
     #hero .hero-section h1{
-        left:30%;
+        left:9%;
         font-size:1rem;
         letter-spacing:0.1rem;
     }
@@ -258,10 +259,10 @@ footer p{
     .btn-secondary button {
 
         top:63%;   
-        left:42%;  
+        left:33%;  
      }  
      .btn-primary button { 
-        left:42%;  
+        left:33%;  
      }
 
      footer h1{
@@ -272,13 +273,16 @@ footer p{
         
     }
      footer p{
-         margin-left:35%;
+         margin-left:20%;
          font-size:0.7rem;
-         margin-top:11%;
+         margin-top:16%;
      }
     
 
-
+     .video-cover
+     {
+         background: var(--button-color) url("../images/Color_8.jpg") no repeat center center/cover;
+     }
 
 
 }
