@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lyfegud/precache-manifest.433891d3df84ba1c4baa7983dad53982.js"
+  "/lyfegud/precache-manifest.61bdc7afd162d1cd8f8fcf22de17d197.js"
 );
 
 self.addEventListener('message', (event) => {
