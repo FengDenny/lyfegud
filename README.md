@@ -8,4 +8,5 @@ A fully responsive video hero carousel
  npm i --save @fortawesome/react-fontawesome
  npm start
 
-
+## Preview
+https://fengdenny.github.io/lyfegud/
